@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, flag=1;
+    cout << "Enter number: ";
+    cin >> n;
+    for (int i=2; i<=n/2; i++) {
+        if (n % i == 0) { flag=0; break; }
+    }
+    if (n > 1 && flag) cout << "Prime";
+    else cout << "Not Prime";
+    return 0;
+}
